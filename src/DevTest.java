@@ -11,7 +11,7 @@ public class DevTest {
         int month = SafeInput.getRangedInt(in, "Enter a month number", 1, 12);
         double score = SafeInput.getRangedDouble(in, "Enter a score", 0.0, 100.0);
         boolean confirm = SafeInput.getYNConfirm(in, "Do you want to continue?");
-        String ssn = SafeInput.getRegExString(in, "Enter your SSN (###-##-####)", "^\\d{3}-\\d{2}-\\d{4}$");
+        String phoneNumber = SafeInput.getRegExString(in, "Enter your Phone Number (###-###-####)", "^\\d{3}-\\d{3}-\\d{4}$");
 
         System.out.println("\nCollected values:");
         System.out.println("Name: " + name);
@@ -20,7 +20,7 @@ public class DevTest {
         System.out.println("Month: " + month);
         System.out.println("Score: " + score);
         System.out.println("Continue: " + confirm);
-        System.out.println("SSN: " + ssn);
+        System.out.println("Phone Number: " + phoneNumber);
 
         SafeInput.prettyHeader("Lab 08 - Get Methodical Complete!");
     }
